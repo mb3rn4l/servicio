@@ -1,0 +1,17 @@
+<html>
+  <head>
+      <title>Prueba</title>
+  </head>
+  <body>
+
+  <form action="{% url 'myApp:ProcessFile' %}" method="post">
+      {% csrf_token %}
+
+      {{form.as_p}}
+
+	  <input type="submit" value="Enviar">
+  </form>
+
+
+  </body>
+</html>
